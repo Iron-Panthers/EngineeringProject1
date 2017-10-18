@@ -1,5 +1,10 @@
 package org.usfirst.frc.team5026.robot;
 
+import org.usfirst.frc.team5026.robot.commands.ElevateDown;
+import org.usfirst.frc.team5026.robot.commands.ElevateUp;
+import org.usfirst.frc.team5026.robot.commands.IntakeCommand;
+import org.usfirst.frc.team5026.robot.commands.OuttakeCommand;
+
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -24,7 +29,10 @@ public class OI {
 	}
 	
 	public void mapButtons() {
-		Btn1.whileHeld(new);
+		Btn1.whileHeld(new IntakeCommand(1));
+		Btn2.whileHeld(new OuttakeCommand(1));
+		Btn4.whileHeld(new ElevateUp(1));
+		Btn5.whileHeld(new ElevateDown(1));
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
