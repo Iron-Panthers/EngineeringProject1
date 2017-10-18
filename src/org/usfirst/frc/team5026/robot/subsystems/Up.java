@@ -5,7 +5,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 /**
  *
  */
-public class UpSubsystem extends Subsystem {
+public class Up extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
