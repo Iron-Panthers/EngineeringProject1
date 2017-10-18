@@ -9,16 +9,20 @@ public class TopMotor extends Subsystem {
 
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-	public TopMotor clockwise;
+	public TopMotor Clockwise;
 	
-	public void clockwise() {
-		
+	public void Clockwise() {
+		Hardware.motor2.set(0.5);
 	}
 	
-	public TopMotor counterclockwise;
+	public TopMotor CounterClockwise;
 	
 	public void counterclockwise () {
-		
+		Hardware.motor2.set(-0.5);
+	}
+	
+	public void stop () {
+		Hardware.motor2.set(0);
 	}
 
     public void initDefaultCommand() {

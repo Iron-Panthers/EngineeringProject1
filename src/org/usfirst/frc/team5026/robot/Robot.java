@@ -22,7 +22,7 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Hardware hardware;
-	public static Intake intake; //needed to use methods in other classes
+	public static Intake intake;  //needed to use methods in other classes
 	public static TopMotor topMotor;
 	// Make subsystem instance variables
 	// ex: public static Intake intake;
