@@ -9,9 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class Intake extends Subsystem {
 
-    private static final double INTAKE_SPEED = 0;
-	private static final double OUTTAKE_SPEED = 0;
-	// Put methods for controlling this subsystem
+    // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	public Intake intake;
 

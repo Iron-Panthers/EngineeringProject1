@@ -22,7 +22,7 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Hardware hardware;
-	public static Intake intake;  //needed to use methods in other classes
+	public static Intake intake;
 	public static Intake outtake;
 	public static TopMotor Clockwise;
 	public static TopMotor CounterClockwise;
@@ -45,7 +45,6 @@ public class Robot extends IterativeRobot {
 		
 		
 		oi.mapButtons();
-		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
 
