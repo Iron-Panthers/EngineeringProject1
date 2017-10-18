@@ -7,8 +7,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class TopMotor extends Subsystem {
 
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
 	public TopMotor Clockwise;
 	
 	public void Clockwise() {
