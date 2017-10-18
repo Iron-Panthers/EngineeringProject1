@@ -23,7 +23,7 @@ public class Intake extends Subsystem {
 		motor1.set(Constants.INTAKE_SPEED);
 	}
 	
-	public void outtake() {
+	public void outtake() {//to be used later if needed
 		motor1.set(Constants.OUTTAKE_SPEED);
 	}
 	

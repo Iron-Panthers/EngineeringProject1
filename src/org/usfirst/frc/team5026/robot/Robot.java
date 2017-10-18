@@ -26,7 +26,6 @@ public class Robot extends IterativeRobot {
 	public static TopMotor topMotor;
 	// Make subsystem instance variables
 	// ex: public static Intake intake;
-	public static Intake intake;
 	public static TopMotor Clockwise;
 	public static TopMotor CounterClockwise;
 
