@@ -6,8 +6,8 @@ public class Hardware {
 	Spark firstMotor;
 	Spark secondMotor;
 	
-	public Hardware(Spark motor) {
-		firstMotor = motor;
-		secondMotor = motor;
+	public Hardware() {
+		firstMotor = new Spark(0);
+		secondMotor = new Spark(1);
 	}	
 }
