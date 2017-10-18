@@ -24,7 +24,7 @@ public class OI {
 	}
 	
 	public void mapButtons() {
-		
+		Btn1.whileHeld(new);
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a

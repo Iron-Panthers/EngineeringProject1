@@ -1,16 +1,13 @@
 package org.usfirst.frc.team5026.robot.commands;
 
-import org.usfirst.frc.team5026.robot.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class IntakeCommand extends Command {
-	
-    public IntakeCommand() {
-    	requires(Robot.intake);
+public class ElevateDown extends Command {
+
+    public ElevateDown() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -20,8 +17,7 @@ public class IntakeCommand extends Command {
     }
 
     // Called repeatedly when this Command is scheduled to run
-    protected void execute(double speed) {
-    	Robot.intake.intake(speed);
+    protected void execute() {
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -36,6 +32,5 @@ public class IntakeCommand extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	Robot.intake.stop();
     }
 }
