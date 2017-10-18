@@ -24,8 +24,7 @@ public class Robot extends IterativeRobot {
 	public static Hardware hardware;
 	public static Intake intake; //needed to use methods in other classes
 	public static TopMotor topMotor;
-	// Make subsystem instance variables
-	// ex: public static Intake intake;
+	public static Intake outtake;
 	public static TopMotor Clockwise;
 	public static TopMotor CounterClockwise;
 
@@ -40,15 +39,13 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 		hardware = new Hardware();
-		// intake = new Intake();
 		intake = new Intake();
-		outtake = new Outake();
-		Clockwise = new Clockwise();
-		CounterClockwise = new CounterClockwise();
+		outtake = new Intake();
+		Clockwise = new TopMotor();
+		CounterClockwise = new TopMotor();
 		
 		
 		oi.mapButtons();
-		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
 

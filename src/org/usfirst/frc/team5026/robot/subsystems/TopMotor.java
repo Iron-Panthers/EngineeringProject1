@@ -1,5 +1,7 @@
 package org.usfirst.frc.team5026.robot.subsystems;
 
+import org.usfirst.frc.team5026.robot.Hardware;
+
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -7,18 +9,20 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class TopMotor extends Subsystem {
 
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
-	public TopMotor clockwise;
+	public TopMotor Clockwise;
 	
-	public void clockwise() {
-		
+	public void Clockwise() {
+		Hardware.motor2.set(UP_SPEED);
 	}
 	
-	public TopMotor counterclockwise;
+	public TopMotor CounterClockwise;
 	
 	public void counterclockwise () {
-		
+		Hardware.motor2.set(DOWN_SPEED);
+	}
+	
+	public void stop () {
+		Hardware.motor2.set(0);
 	}
 
     public void initDefaultCommand() {
