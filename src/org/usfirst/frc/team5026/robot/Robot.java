@@ -25,7 +25,10 @@ public class Robot extends IterativeRobot {
 	public static Intake intake; //needed to use methods in other classes
 	public static TopMotor topMotor;
 	// Make subsystem instance variables
-	// ex: public static Intake intakesubsystem;
+	// ex: public static Intake intake;
+	public static Intake intake;
+	public static TopMotor Clockwise;
+	public static TopMotor CounterClockwise;
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -38,8 +41,11 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 		hardware = new Hardware();
+		// intake = new Intake();
 		intake = new Intake();
-		topMotor = new TopMotor();
+		outtake = new Outake();
+		Clockwise = new Clockwise();
+		CounterClockwise = new CounterClockwise();
 		
 		
 		oi.mapButtons();
