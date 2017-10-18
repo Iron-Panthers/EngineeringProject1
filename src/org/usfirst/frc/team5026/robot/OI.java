@@ -1,5 +1,9 @@
 package org.usfirst.frc.team5026.robot;
 
+import org.usfirst.frc.team5026.robot.commands.Clockwise;
+import org.usfirst.frc.team5026.robot.commands.CounterClockwise;
+import org.usfirst.frc.team5026.robot.commands.IntakeCommand;
+
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
@@ -16,9 +20,9 @@ public class OI {
 	Button StickBtnThree;
 	
 	public void mapButtons() { //commands when button is pressed
-		StickBtnOne.whileHeld(new //command());
-		StickBtnTwo.whileHeld(new //command());
-		StickBtnThree.whileHeld(new //command());
+		StickBtnOne.whileHeld(new IntakeCommand());
+		StickBtnTwo.whileHeld(new CounterClockwise());
+		StickBtnThree.whileHeld(new Clockwise());
 
 	}
 	
