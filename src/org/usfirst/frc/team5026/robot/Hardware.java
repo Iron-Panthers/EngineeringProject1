@@ -4,10 +4,10 @@ import edu.wpi.first.wpilibj.Spark;
 
 public class Hardware {
 
-	Spark motor1;
-	Spark motor2;
-	Spark motor3;
-	Spark motor4;
+	public Spark motor1;
+	public Spark motor2;
+	public Spark motor3;
+	public Spark motor4;
 	
 	public Hardware() {//construct hardware
 		motor1 = new Spark(0);	
