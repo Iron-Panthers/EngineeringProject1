@@ -1,6 +1,9 @@
 
 package org.usfirst.frc.team5026.robot;
 
+import org.usfirst.frc.team5026.robot.subsystems.Intake;
+import org.usfirst.frc.team5026.robot.subsystems.TopMotor;
+
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -19,8 +22,10 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Hardware hardware;
+	public static Intake intake; //needed to use methods in other classes
+	public static TopMotor topMotor;
 	// Make subsystem instance variables
-	// ex: public static Intake intake;
+	// ex: public static Intake intakesubsystem;
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
@@ -33,8 +38,8 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 		hardware = new Hardware();
-		// intake = new Intake();
-		
+		intake = new Intake();
+		topMotor = new TopMotor();
 		
 		
 		oi.mapButtons();
