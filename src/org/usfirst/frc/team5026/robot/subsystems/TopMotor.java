@@ -12,7 +12,7 @@ public class TopMotor extends Subsystem {
 	public TopMotor Clockwise;
 	
 	public void Clockwise() {
-		Hardware.motor2.set(UP_SPEED);
+		Hardware.motor2.set(UP_SPEED); //set this speed in Constants.java under robot
 	}
 	
 	public TopMotor CounterClockwise;
