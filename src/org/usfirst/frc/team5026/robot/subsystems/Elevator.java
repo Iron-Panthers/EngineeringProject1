@@ -6,23 +6,22 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 /**
  *
  */
-public class Intake extends Subsystem {
-	Spark intakeMotor;
-	public Intake(Spark motor) {
-		intakeMotor = motor;
+public class Elevator extends Subsystem {
+	Spark liftMotor;
+	public Elevator(Spark motor) {
+		liftMotor = motor;
 	}
-	public void intake(double speed) {
-		intakeMotor.set(speed);
+	public void up(double speed) {
+		liftMotor.set(speed);
 	}
-	public void outtake(double speed) {
-		intakeMotor.set(speed);
+	public void down(double speed) {
+		liftMotor.set(speed);
 	}
 	public void stop() {
-		intakeMotor.stopMotor();
+		liftMotor.stopMotor();
 	}
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
-
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
