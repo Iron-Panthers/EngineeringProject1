@@ -9,7 +9,7 @@ public class Hardware {
 	Spark motor3;
 	Spark motor4;
 	
-	public Hardware() {//construct hardwear
+	public Hardware() {//construct hardware
 		motor1 = new Spark(0);	
 		motor2 = new Spark(1);
 		motor3 = new Spark(2);
