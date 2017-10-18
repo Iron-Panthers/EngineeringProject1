@@ -37,8 +37,8 @@ public class Robot extends IterativeRobot {
 	@Override
 	public void robotInit() {
 		hardware = new Hardware();
-		intake = new Intake(motor1);
-		elevator = new Elevator();
+		intake = new Intake(hardware.motorForIntaking);
+		elevator = new Elevator(hardware.motorForElevating);
 		oi = new OI();
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
