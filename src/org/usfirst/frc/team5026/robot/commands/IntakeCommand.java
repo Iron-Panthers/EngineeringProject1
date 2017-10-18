@@ -8,9 +8,10 @@ import edu.wpi.first.wpilibj.command.Command;
  *
  */
 public class IntakeCommand extends Command {
-	
-    public IntakeCommand() {
+	double speed;
+    public IntakeCommand(double speed) {
     	requires(Robot.intake);
+    	this.speed = speed;
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -20,7 +21,7 @@ public class IntakeCommand extends Command {
     }
 
     // Called repeatedly when this Command is scheduled to run
-    protected void execute(double speed) {
+    protected void execute() {
     	Robot.intake.intake(speed);
     }
 

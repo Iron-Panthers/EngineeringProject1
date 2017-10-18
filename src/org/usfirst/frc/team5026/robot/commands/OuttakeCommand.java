@@ -8,9 +8,10 @@ import edu.wpi.first.wpilibj.command.Command;
  *
  */
 public class OuttakeCommand extends Command {
-
-    public OuttakeCommand() {
+	double speed;
+    public OuttakeCommand(double speed) {
     	requires(Robot.intake);
+    	this.speed = speed;
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -20,7 +21,7 @@ public class OuttakeCommand extends Command {
     }
 
     // Called repeatedly when this Command is scheduled to run
-    protected void execute(double speed) {
+    protected void execute() {
     	Robot.intake.outtake(speed);
     }
     
@@ -36,5 +37,6 @@ public class OuttakeCommand extends Command {
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
+    	Robot.intake.stop();
     }
 }
