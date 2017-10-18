@@ -14,7 +14,11 @@ public class Intake extends Subsystem {
 	public Intake intake;
 
 	public void intake() {
-		Hardware.motor1.set(0.6);
+		Hardware.motor1.set(INTAKE_SPEED);
+	}
+	
+	public void outake() {
+		Hardware.motor1.set(OUTTAKE_SPEED);
 	}
 	
 	public void stop() {
