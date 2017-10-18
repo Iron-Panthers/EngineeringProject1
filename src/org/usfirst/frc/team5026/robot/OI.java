@@ -14,13 +14,11 @@ public class OI {
 	Button StickBtnOne;//trigger
 	Button StickBtnTwo;//side button
 	Button StickBtnThree;
-	Button StickBtnFour;
 	
 	public void mapButtons() { //commands when button is pressed
 		StickBtnOne.whileHeld(new //command());
 		StickBtnTwo.whileHeld(new //command());
 		StickBtnThree.whileHeld(new //command());
-		StickBtnFour.whileHeld(new //command());
 
 	}
 	
@@ -29,7 +27,6 @@ public class OI {
 		StickBtnOne = new JoystickButton(stick,1);
 		StickBtnTwo = new JoystickButton(stick,2);
 		StickBtnThree = new JoystickButton(stick,3);
-		StickBtnFour = new JoystickButton(stick,4);
 	}
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
