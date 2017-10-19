@@ -5,20 +5,16 @@ import org.usfirst.frc.team5026.robot.Hardware;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
 
-/**
- *
- */
-public class Intake extends Subsystem {
 
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
+public class Intake extends Subsystem {
+	
 	public Intake intake;
 
 	public void intake() {
 		Hardware.motor1.set(Constants.INTAKE_SPEED);
 	}
 	
-	public void outtake() {//to be used later if needed
+	public void outtake() { //to be used later if needed
 		Hardware.motor1.set(Constants.OUTTAKE_SPEED);
 	}
 	
@@ -27,8 +23,9 @@ public class Intake extends Subsystem {
 	}
    
 	public void initDefaultCommand() {
+		Hardware.motor1.set(0); //I think?  I'm not so sure.
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        // setDefaultCommand(new MySpecialCommand());
     }
 }
 
