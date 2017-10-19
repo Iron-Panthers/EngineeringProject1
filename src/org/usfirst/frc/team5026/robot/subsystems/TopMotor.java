@@ -26,7 +26,5 @@ public class TopMotor extends Subsystem {
 
     public void initDefaultCommand() {
     	Hardware.motor2.set(0);
-        // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
     }
 }

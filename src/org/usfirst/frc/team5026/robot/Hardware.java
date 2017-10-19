@@ -7,7 +7,7 @@ public class Hardware {
 	public static Spark motor1;
 	public static Spark motor2;
 	
-	public Hardware() {//construct hardware
+	public Hardware() {
 		motor1 = new Spark(0);	
 		motor2 = new Spark(1);
 
