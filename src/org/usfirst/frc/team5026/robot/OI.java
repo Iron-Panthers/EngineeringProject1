@@ -17,7 +17,7 @@ public class OI {
 	public Joystick stick;
 	Button StickBtnOne; //trigger
 	Button StickBtnTwo; //side button
-	Button StickBtnThree;
+	Button StickBtnThree; 
 	
 	public void mapButtons() {
 		StickBtnOne.whileHeld(new IntakeCommand());
